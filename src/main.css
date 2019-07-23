@@ -1,0 +1,58 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+div{
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto 200px auto;
+    grid-template-areas:
+    "."
+    "banner"
+    ".";
+}
+
+header {
+    grid-area: header;
+    background: rgb(0, 0, 0);
+}
+
+#welcome-page{
+    height: 100%;
+    background-image: url("../assets/turing_textrue.jpg");
+}
+
+h1 {
+    font-family: 'Geostar', cursive;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.591);
+}
+
+#banner{
+    padding-top: 35px;
+    text-align: center;
+    grid-area: banner;
+    font-size: 50px;
+}
+
+#nav {
+    height: 100%;
+    grid-area: nav;
+    text-align: center;
+    font-family: 'Russo One', sans-serif;
+    background-image: url("../assets/turing_textrue.jpg");
+    background-size: 700%
+}
+
+#nav>a {
+    color: white;
+}
+
+#nav>a:visited {
+    color: rgb(252, 136, 235);
+}
+
+.hidden {
+    display: none;
+}

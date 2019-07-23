@@ -1,0 +1,1 @@
+import './render-posters.test.js';
