@@ -82,12 +82,12 @@ const orb = {
 const posters = [
     orb,
     jungle,
+    tower,
     guitar,
     face,
     akira,
     plane,
     shark,
-    tower,
 ];
 
 export default posters;
