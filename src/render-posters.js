@@ -1,6 +1,7 @@
 function renderPosters(jungle) {
     const li = document.createElement('li');
     li.className = jungle.code;
+    li.classList.add(jungle.acronym);
     li.title = jungle.description;
 
     const h3 = document.createElement('h3');

@@ -16,7 +16,7 @@ test('renders a fruit', assert => {
         price: 600.00,
         cost: 10
     };
-    const expected = '<li class="AN-jungle" title="Bone Jungle by Alex Nino"><h3>Bone Jungle</h3><img src="assets/AN-jungle.jpg" alt="Bone Jungle image"><p class="artist">Alex Nino</p><p class="price">$600.00</p><button value="AN-jungle">Add</button></li>';
+    const expected = '<li class="AN-jungle AN" title="Bone Jungle by Alex Nino"><h3>Bone Jungle</h3><img src="assets/AN-jungle.jpg" alt="Bone Jungle image"><p class="artist">Alex Nino</p><p class="price">$600.00</p><button value="AN-jungle">Add</button></li>';
 
     //act
     const dom = renderPosters(jungle);

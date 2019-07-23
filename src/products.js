@@ -2,6 +2,7 @@ import posters from './data/posters.js';
 import renderPosters from './render-posters.js';
 
 const sortButton = document.getElementById('sort');
+const revealButton = document.getElementById('reveal');
 const artistSelector = document.getElementById('dropdown');
 const list = document.getElementById('cards');
 
@@ -13,14 +14,26 @@ for(let i = 0; i < posters.length; i++) {
 
 sortButton.addEventListener('click', () => {
     let artist = artistSelector.value;
-    console.log(artist);
+
     const selectedWorks = document.querySelectorAll('.' + artist);
-    console.log(selectedWorks);
+    const allWorks = document.querySelectorAll('li');
 
+    for(let i = 0; i < allWorks.length; i++) {
+        let work = allWorks[i];
+        work.classList.add('hidden');
+    }
 
-    // for(let i = 0; i < posters.length; i++) {
+    for(let i = 0; i < selectedWorks.length; i++) {
+        let work = selectedWorks[i];
+        work.classList.remove('hidden');
+    }
+});
 
-    // }
+revealButton.addEventListener('click', () => {
+    const allWorks = document.querySelectorAll('li');
 
-
+    for(let i = 0; i < allWorks.length; i++) {
+        let work = allWorks[i];
+        work.classList.remove('hidden');
+    }
 });

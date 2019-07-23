@@ -1,4 +1,4 @@
-html,body{
+html, body {
     height: 100%;
     width: 100%;
 }
@@ -20,7 +20,6 @@ header {
     background-image: url("../assets/turing_textrue.jpg");
     background-size: 700%;
     color: white;
-    
 }
 
 #nav>a {
@@ -35,7 +34,7 @@ header {
     color: white;
 }
 
-#nav>a:hover{
+#nav>a:hover {
     color: red;
 }
 

@@ -11,12 +11,16 @@ body {
     grid-template-areas: "header header" "nav product-page";
 }
 
-main{
+main {
     grid-area: product-page;
     margin-left: 20px;
 }
 
-#dropdown{
+#cards li.hidden {
+    display: none;
+}
+
+#dropdown {
     margin: 20px 0 0 15px;
 }
 
