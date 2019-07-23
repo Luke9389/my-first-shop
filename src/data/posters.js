@@ -70,8 +70,8 @@ const tower = {
 };
 
 const orb = {
-    code: 'AN-orb',
-    image: 'assets/AN-orb.jpg',
+    code: 'M-orb',
+    image: 'assets/M-orb.png',
     name: 'Orb',
     description: 'Orb by Meobius',
     category: 'Meobius',
@@ -80,14 +80,14 @@ const orb = {
 };
 
 const posters = [
-    guitar,
+    orb,
     jungle,
+    guitar,
+    face,
     akira,
     plane,
     shark,
-    face,
     tower,
-    orb
 ];
 
 export default posters;
