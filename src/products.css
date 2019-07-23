@@ -11,6 +11,15 @@ body {
     grid-template-areas: "header header" "nav product-page";
 }
 
+main{
+    grid-area: product-page;
+    margin-left: 20px;
+}
+
+#dropdown{
+    margin: 20px 0 0 15px;
+}
+
 #cards {
     display: flex;
     flex-wrap: wrap;
@@ -46,7 +55,7 @@ h1 {
     grid-area: image;
     align-self: center;
     justify-self: center;
-    max-width: 100%;
+    max-width: 90%;
     max-height: 100%;
 }
 

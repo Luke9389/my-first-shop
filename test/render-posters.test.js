@@ -10,8 +10,9 @@ test('renders a fruit', assert => {
         code: 'AN-jungle',
         image: 'assets/AN-jungle.jpg',
         name: 'Bone Jungle',
-        description: 'Jungle by Alex Nino',
+        description: 'Bone Jungle by Alex Nino',
         category: 'Alex Nino',
+        acronym: 'AN',
         price: 600.00,
         cost: 10
     };

@@ -2,8 +2,9 @@ const jungle = {
     code: 'AN-jungle',
     image: 'assets/AN-jungle.jpg',
     name: 'Bone Jungle',
-    description: 'Jungle by Alex Nino',
+    description: 'Bone Jungle by Alex Nino',
     category: 'Alex Nino',
+    acronym: 'AN',
     price: 600.00,
     cost: 10
 };
@@ -14,6 +15,7 @@ const guitar = {
     name: 'Guitar',
     description: 'Guitar by Alex Nino',
     category: 'Alex Nino',
+    acronym: 'AN',
     price: 500.00,
     cost: 10
 };
@@ -24,6 +26,7 @@ const akira = {
     name: 'Akira',
     description: 'Akira by Kim Jung Gi',
     category: 'Kim Jung Gi',
+    acronym: 'KJG',
     price: 700.00,
     cost: 10
 };
@@ -35,6 +38,7 @@ const plane = {
     name: 'Plane',
     description: 'Plane by Kim Jung Gi',
     category: 'Kim Jung Gi',
+    acronym: 'KJG',
     price: 800.00,
     cost: 10
 };
@@ -45,6 +49,7 @@ const shark = {
     name: 'Shark',
     description: 'Shark by Kim Jung Gi',
     category: 'Kim Jung Gi',
+    acronym: 'KJG',
     price: 500.00,
     cost: 10
 };
@@ -55,6 +60,7 @@ const face = {
     name: 'Face',
     description: 'Face by Meobius',
     category: 'Meobius',
+    acronym: 'M',
     price: 300.00,
     cost: 10
 };
@@ -65,6 +71,7 @@ const tower = {
     name: 'Tower',
     description: 'Tower by Meobius',
     category: 'Meobius',
+    acronym: 'M',
     price: 400.00,
     cost: 10
 };
@@ -75,6 +82,7 @@ const orb = {
     name: 'Orb',
     description: 'Orb by Meobius',
     category: 'Meobius',
+    acronym: 'M',
     price: 600.00,
     cost: 10
 };
