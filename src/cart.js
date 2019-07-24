@@ -4,6 +4,7 @@ import { findProduct, calcOrderTotal } from './register.js';
 import renderRowItem from './render-row-item.js';
 import toUSD from './format.js';
 
+const couponCode = document.getElementById('user-coupon');
 const tbody = document.querySelector('tbody');
 
 for(let i = 0; i < cart.length; i++){
@@ -13,6 +14,7 @@ for(let i = 0; i < cart.length; i++){
 
     tbody.appendChild(dom);
 }
+if()
 
 let totalListItem = document.createElement('th');
 totalListItem.textContent = toUSD(calcOrderTotal(cart, posters));

@@ -66,3 +66,8 @@ td{
     margin: 10px;
     padding: 5px;
 }
+
+#user-coupon{
+    margin-top: 15px;
+    display: block;
+}
