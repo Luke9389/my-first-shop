@@ -4,7 +4,7 @@ const test = QUnit.test;
 
 QUnit.module('Render Posters');
 
-test('renders a fruit', assert => {
+test('renders a poster', assert => {
     const jungle = {
         code: 'AN-jungle',
         image: 'assets/AN-jungle.jpg',
