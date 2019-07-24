@@ -1,5 +1,5 @@
 import posters from '../src/data/posters.js';
-import renderRowItem from '../src/render-row-item.js';
+import { renderRowItem } from '../src/render-row-item.js';
 import { findProduct } from '../src/register.js';
 
 
