@@ -49,4 +49,20 @@ tbody tr:nth-child(even) {
     color: white;
 }
 
-tr {}
+thead {
+    border-bottom: 1px solid red;
+}
+
+tfoot{
+    border-top: 1px solid red;
+}
+
+th{
+    padding: 5px;
+    text-align: left;
+}
+
+td{
+    margin: 10px;
+    padding: 5px;
+}
