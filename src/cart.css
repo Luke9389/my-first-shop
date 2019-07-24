@@ -71,3 +71,7 @@ td{
     margin-top: 15px;
     display: block;
 }
+
+.discountRow{
+    background: rgb(173, 173, 255);
+}
