@@ -1,4 +1,3 @@
-
 import store from './data/store.js';
 import renderPosters from './render-posters.js';
 

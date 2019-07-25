@@ -1,6 +1,5 @@
 import store from './data/store.js';
 
-
 function renderPosters(jungle) {
     const li = document.createElement('li');
     li.className = jungle.code;

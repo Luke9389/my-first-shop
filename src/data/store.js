@@ -46,12 +46,10 @@ const store = {
                 code: code,
                 quantity: quantity
             };
-
             shoppingCart.push(order);
         }
         store.save('shopping-cart', shoppingCart);
     },
-
 
 };
 

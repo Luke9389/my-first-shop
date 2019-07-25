@@ -2,7 +2,6 @@ import posters from '../src/data/posters.js';
 import { renderRowItem } from '../src/render-row-item.js';
 import { findProduct } from '../src/register.js';
 
-
 const test = QUnit.test;
 
 QUnit.module('Render Cart Item');

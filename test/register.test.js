@@ -2,7 +2,6 @@ import posters from '../src/data/posters.js';
 import order from '../src/data/order.js';
 import { findProduct, getLineTotal, calcOrderTotal } from '../src/register.js';
 
-
 const test = QUnit.test;
 
 QUnit.module('Register');
