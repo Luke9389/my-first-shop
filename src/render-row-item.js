@@ -2,6 +2,7 @@ import { getLineTotal } from './register.js';
 import toUSD from './format.js';
 
 export function renderRowItem(lineItem, poster) {
+    
     const tr = document.createElement('tr');
 
     const name = document.createElement('td');

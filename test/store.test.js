@@ -57,3 +57,18 @@ test('order product code to empty shopping cart', assert => {
     //assert
     assert.deepEqual(shoppingCart, expected);
 });
+
+test('order product to non-empty shopping cart', assert => {
+    //arrange
+    const code = 'mochi';
+    const expected = [{
+        code: 'mochi',
+        quantity: 2
+    }];
+    //act
+    store.orderProduct(code, 1);
+    store.orderProduct(code, 1);
+    const shoppingCart = store.getShoppingCart();
+    //assert
+    assert.deepEqual(shoppingCart, expected);
+});

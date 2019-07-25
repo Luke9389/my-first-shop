@@ -1,3 +1,6 @@
+import store from './data/store.js';
+
+
 function renderPosters(jungle) {
     const li = document.createElement('li');
     li.className = jungle.code;
@@ -27,6 +30,13 @@ function renderPosters(jungle) {
 
     const button = document.createElement('button');
     button.textContent = 'Add';
+    button.addEventListener('click', () => {
+        //get the cart
+        store.getShoppingCart();
+        // put this item in there 
+        store.orderProduct(jungle.code, 1);
+        //
+    });
     button.value = jungle.code;
     li.appendChild(button);
 
