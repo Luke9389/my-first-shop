@@ -50,19 +50,6 @@ const store = {
         }
         store.save('shopping-cart', shoppingCart);
     },
-    addProduct(product) {
-        const products = store.getProducts();
-        products.push(product);
-        store.save('products', products);
-    },
-    getSales() {
-        let sales = store.get('sales');
-
-        if(!sales) {
-            sales = [];
-        }
-        return sales;
-    },
     placeOrder(cart) {
         const sales = store.getSales();
 
@@ -82,6 +69,19 @@ const store = {
             }
         }
         store.save('sales', sales);
+    },
+    addProduct(product) {
+        const products = store.getProducts();
+        products.push(product);
+        store.save('products', products);
+    },
+    getSales() {
+        let sales = store.get('sales');
+
+        if(!sales) {
+            sales = [];
+        }
+        return sales;
     },
 };
 

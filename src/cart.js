@@ -7,6 +7,7 @@ import toUSD from './format.js';
 import coupons from './data/coupon-codes.js';
 
 const couponButton = document.getElementById('apply-code');
+const orderButton = document.getElementById('place-order');
 const couponCode = document.getElementById('user-coupon');
 const tbody = document.querySelector('tbody');
 const table = document.querySelector('table');
@@ -24,7 +25,7 @@ for(let i = 0; i < cart.length; i++) {
 
 let totalListItem = document.createElement('th');
 let subtotal = calcOrderTotal(cart, posters);
-totalListItem.textContent = toUSD(calcOrderTotal(cart, posters));
+totalListItem.textContent = toUSD(subtotal);
 let tfoot = document.querySelector('tfoot>tr');
 tfoot.appendChild(totalListItem);
 
@@ -41,6 +42,10 @@ couponButton.addEventListener('click', () => {
     } else if(discountApplied) {
         alert('You\'ve already used a coupon!');
     } else { alert('The coupon code you entered is invalid.'); }
+});
+
+orderButton.addEventListener('click', () =>{
+    store.placeOrder(cart);
 });
 
 export default totalListItem;
