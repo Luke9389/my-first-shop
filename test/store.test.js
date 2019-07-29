@@ -98,7 +98,15 @@ test('return empty array from get sales', assert => {
     const expected = [];
     //act
     const result = store.getSales();
-
     //assert
     assert.deepEqual(result, expected);
+});
+
+test('place order', assert => {
+    //arrange
+
+    //act
+
+    //assert
+    assert.deepEqual();
 });

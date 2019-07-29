@@ -50,11 +50,19 @@ const store = {
         }
         store.save('shopping-cart', shoppingCart);
     },
-    addProduct(product){
+    addProduct(product) {
         const products = store.getProducts();
         products.push(product);
         store.save('products', products);
-    }
+    },
+    getSales() {
+        let sales = store.get('sales');
+
+        if(!sales) {
+            sales = [];
+        }
+        return sales;
+    },
 };
 
 export default store;
