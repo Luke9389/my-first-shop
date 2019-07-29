@@ -44,7 +44,7 @@ const store = {
         } else {
             const order = {
                 code: code,
-                quantity: quantity
+                quantity: quantity,
             };
             shoppingCart.push(order);
         }
@@ -62,6 +62,26 @@ const store = {
             sales = [];
         }
         return sales;
+    },
+    placeOrder(cart) {
+        const sales = store.getSales();
+
+        for(let i = 0; i < cart.length; i++) {
+            const code = cart[i].code;
+            const quant = cart[i].quantity;
+            let product = findProduct(sales, code);
+
+            if(product) {
+                product.quantity += quant;
+            } else {
+                const order = {
+                    code: code,
+                    quantity: quant,
+                };
+                sales.push(order);
+            }
+        }
+        store.save('sales', sales);
     },
 };
 
