@@ -20,3 +20,5 @@ let subtotal = calcOrderTotal(sales, posters);
 totalListItem.textContent = toUSD(subtotal);
 let tfoot = document.querySelector('tfoot>tr');
 tfoot.appendChild(totalListItem);
+
+store.clearCart();

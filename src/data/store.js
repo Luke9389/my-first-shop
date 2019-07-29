@@ -83,6 +83,9 @@ const store = {
         }
         return sales;
     },
+    clearCart(){
+        store.storage.removeItem('shopping-cart');
+    }
 };
 
 export default store;
