@@ -3,19 +3,40 @@ html, body {
     width: 100%;
 }
 
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Geostar', cursive;
+    font-size: 50px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.564);
+    margin: 20px 0px 20px 80px;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 100px auto;
+    grid-template-columns: 150px auto;
+    grid-template-areas: "header header" "nav page-content";
+}
+
 header {
     grid-area: header;
     background: rgb(0, 0, 0);
 }
 
 #nav {
+    grid-area: nav;
     padding-top: 50px;
     height: 100%;
-    grid-area: nav;
     text-align: center;
     font-family: 'Russo One', sans-serif;
     font-size: 28px;
-    background-image: url("../assets/turing_textrue.jpg");
+    background-image: url("../assets/turing_texture.jpg");
     background-size: 700%;
     color: white;
 }

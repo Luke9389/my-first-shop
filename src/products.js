@@ -1,10 +1,12 @@
-import posters from './data/posters.js';
+import store from './data/store.js';
 import renderPosters from './render-posters.js';
 
 const sortButton = document.getElementById('sort');
 const revealButton = document.getElementById('reveal');
 const artistSelector = document.getElementById('dropdown');
 const list = document.getElementById('cards');
+
+let posters = store.getProducts();
 
 for(let i = 0; i < posters.length; i++) {
     const poster = posters[i];

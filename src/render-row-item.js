@@ -1,7 +1,8 @@
 import { getLineTotal } from './register.js';
 import toUSD from './format.js';
 
-function renderRowItem(lineItem, poster){
+export function renderRowItem(lineItem, poster) {
+    
     const tr = document.createElement('tr');
 
     const name = document.createElement('td');
@@ -23,4 +24,25 @@ function renderRowItem(lineItem, poster){
     return tr;
 }
 
-export default renderRowItem;
+export function renderDiscountRow(discount, subtotal) {
+    const tr = document.createElement('tr');
+    tr.classList.add('discountRow');
+
+    const td = document.createElement('td');
+    tr.appendChild(td);
+
+    const text = document.createElement('td');
+    text.textContent = 'Discount: ' + discount + '%';
+    tr.appendChild(text);
+
+    const sub = document.createElement('td');
+    sub.textContent = 'Subtotal: ' + toUSD(subtotal);
+    tr.appendChild(sub);
+
+    const savingsRowItem = document.createElement('td');
+    let savings = subtotal * discount / 100;
+    savingsRowItem.textContent = 'Savings: ' + toUSD(parseInt(savings));
+    tr.appendChild(savingsRowItem);
+
+    return tr;
+}

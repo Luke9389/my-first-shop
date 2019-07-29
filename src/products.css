@@ -1,18 +1,5 @@
-* {
-    box-sizing: border-box;
-}
-
-body {
-    height: 100%;
-    width: 100%;
-    display: grid;
-    grid-template-rows: 100px auto;
-    grid-template-columns: 150px auto;
-    grid-template-areas: "header header" "nav product-page";
-}
-
 main {
-    grid-area: product-page;
+    grid-area: page-content;
     margin-left: 20px;
 }
 
@@ -45,14 +32,6 @@ main {
     text-align: center;
     border: 3px solid red;
     background-color: rgb(205, 215, 213);
-}
-
-h1 {
-    font-family: 'Geostar', cursive;
-    font-size: 50px;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.564);
-    margin: 20px 0px 20px 80px;
 }
 
 #cards li img {
