@@ -1,12 +1,12 @@
 const cart = [{
     code: 'M-orb',
-    quantity: 3,
+    quantity: 2,
 }, {
     code: 'KJG-shark',
-    quantity: 5
+    quantity: 7
 }, {
     code: 'AN-jungle',
-    quantity: 1
+    quantity: 9
 }];
 
 export default cart;

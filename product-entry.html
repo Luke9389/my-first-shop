@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Product Entry</title>
+        <link rel="stylesheet" href="src/main.css">
+        <link rel="stylesheet" href="src/product-entry.css">
+        <link
+            href="https://fonts.googleapis.com/css?family=Geostar&display=swap"
+            rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css?family=Russo+One&display=swap"
+            rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>Posteur</h1>
+        </header>
+        <section id="nav">
+            NAV
+            <a href="index.html">Welcome Page</a>
+            <a href="products.html">All Products</a>
+            <a href="cart.html">Your Cart</a>
+            <a href="product-entry.html">Product Entry</a>
+            <a href="sales-report.html">Sales Report</a>
+        </section>
+        <main>
+            <h2>Add a Product</h2>
+
+            <form id="product-form">
+                <p>
+                    <label for="code">Code:</label>
+                    <input id="code" required name="code" type="text">
+                </p>
+                <p>
+                    <label for="image">Image:</label>
+                    <input id="image" required name="image" type="file">
+                </p>
+                <p>
+                    <label for="name">Name:</label>
+                    <input id="name" required name="name" type="text">
+                </p>
+                <p>
+                    <label for="description">Description:</label>
+                    <input id="description" required name="description"
+                        type="text">
+                </p>
+                <p>
+                    <label for="category">Category:</label>
+                    <input id="category" required name="category" type="text">
+                </p>
+                <p>
+                    <label for="acronym">Acronym:</label>
+                    <input id="acronym" required name="acronym" type="text">
+                </p>
+                <p>
+                    <label for="price">Price:</label>
+                    <input id="price" required name="price" type="number"
+                        step=".01">
+                </p>
+                <p>
+                    <label for="cost">Cost:</label>
+                    <input id="cost" required name="cost" type="number"
+                        step=".01">
+                </p>
+                <p>
+                    <button>Add Product</button>
+                </p>
+
+            </form>
+        </main>
+
+        <script src="src/product-entry.js" type="module"></script>
+    </body>
+</html>

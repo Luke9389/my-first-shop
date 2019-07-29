@@ -1,6 +1,11 @@
 #welcome-page {
-    height: 100%;
-    background-image: url("../assets/turing_textrue.jpg");
+    height: 100vh;
+    margin: 0px;
+    background-image: url("../assets/turing_texture.jpg");
+}
+
+body{
+    margin: 0px;
 }
 
 h1 {
@@ -8,11 +13,9 @@ h1 {
     font-size: 50px;
     color: white;
     background-color: rgba(0, 0, 0, 0.564);
-    
 }
 
 #banner {
-
     height: 80px;
     padding-top: 20px;
     text-align: center;
