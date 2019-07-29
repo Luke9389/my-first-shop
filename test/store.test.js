@@ -72,3 +72,23 @@ test('order product to non-empty shopping cart', assert => {
     //assert
     assert.deepEqual(shoppingCart, expected);
 });
+
+test('adds new product', assert => {
+    //arrange
+    const product = {
+        code: 'TM-Lineage',
+        image: 'assets/TM-Lineage',
+        name: 'Lineage',
+        description: 'Lineage by Takeshi Murakami',
+        category: 'Takeshi Murakami',
+        acronym: 'TM',
+        price: 800.00,
+        cost: 75.00
+    };
+    //act
+    store.addProduct(product);
+    const posters = store.getProducts();
+
+    //assert
+    assert.deepEqual(posters[posters.length - 1], product);
+});

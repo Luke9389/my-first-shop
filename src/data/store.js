@@ -50,7 +50,11 @@ const store = {
         }
         store.save('shopping-cart', shoppingCart);
     },
-
+    addProduct(product){
+        const products = store.getProducts();
+        products.push(product);
+        store.save('products', products);
+    }
 };
 
 export default store;
