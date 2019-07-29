@@ -8,6 +8,7 @@ form.addEventListener('submit', (event) => {
     const formData = new FormData(form);
 
     const image = formData.get('image');
+    
     getBase64(image, (base64Url) => {
 
         const product = {
@@ -22,11 +23,13 @@ form.addEventListener('submit', (event) => {
         };
 
         store.addProduct(product);
-
+        
         alert('Product added to store');
-
+        
         form.reset();
     });
+    
+
 });
 //Black box of mystery from Stack Overflow
 //https://stackoverflow.com/questions/36280818/how-to-convert-file-to-base64-in-javascript

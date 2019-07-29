@@ -92,3 +92,13 @@ test('adds new product', assert => {
     //assert
     assert.deepEqual(posters[posters.length - 1], product);
 });
+
+test('return empty array from get sales', assert => {
+    //arrange
+    const expected = [];
+    //act
+    const result = store.getSales();
+
+    //assert
+    assert.deepEqual(result, expected);
+});
